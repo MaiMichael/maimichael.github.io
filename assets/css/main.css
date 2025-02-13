@@ -3552,7 +3552,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper > header {
-		padding: 11em 0 2.25em 0 ;
+		padding: 0 0 2.25em 0 ;
 	}
 
 		#wrapper > header .inner {
