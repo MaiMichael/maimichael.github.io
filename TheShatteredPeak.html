@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">The Shattered Peak</a></h1>
+						<h1><a href="index.html">Home</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -59,13 +59,21 @@
 							<div class="wrapper">
 								<div class="inner">
 									<section id="one" class="wrapper alt style1">
-										<h3 class="major">What is The Shattered Peak?</h3>
-										<p>The Shattered Peak is a survival horror game driven by narrative where you must surivive in a freezing cold environment chased by a dangerous entity to uncover the truth behind the mysterious events on a mysterious island.</p>
+										<h3 class="major">Goals and responsibilities</h3>
+										<p>Create a survival game in 4-5 months with a team of 10 people</p>
 
-										<p>In The Shattered Peak you need to manage your body temperature and traverse dangerous zones guarded by a monstrous 
-										creature that will hunt you. In the wilderness you can find tools for survival and collect wood to light up campfires and warm yourself up.</p>
-										<p>Survival systems are seamlessly integrated with dialogues blended with the environment taking insipiration from Giant Sparrow's "What Remains of Edith Finch" in order to deliver narrative and give direction to players.
-										Narrative elements can also be found scattered throughout the island as letters and pages. </p>
+										<p><ul>
+											<li>Follow and manage the entire development loop from ideation to production</li>
+											<li>Design survival game mechanics and gameplay loop</li>
+											<li>Explore the Unreal Engine editor</li>
+											<li>Design areas in the game balancing free exploration through resource management and narrative</li>
+											<li>Design narrative and use it to pace the game</li>
+										</ul></p>
+										<h3 class="major">What is The Shattered Peak?</h3>
+										<p>The Shattered Peak is a survival horror game driven by narrative where players must surivive in a freezing cold environment chased by a dangerous entity to uncover the truth behind the mysterious events on a desolated island.</p>
+
+										<p>In the wilderness players can find tools for survival, wood to light up campfires and warm themselves up, letters and pages to put the story toghether.</p>
+										<p>Survival systems are seamlessly integrated with dialogues blended with the environment taking insipiration from Giant Sparrow's "What Remains of Edith Finch" in order to deliver narrative and give direction to players.</p>
 
 										<p>The game features diegetic UI and experience-oriented audio design to grant immersion in the atmosphere and the environment.</p>
 										<p><b>TRAILER</b></p>
@@ -83,13 +91,13 @@
 									</section>
 									<h3 class="major">Project Description</h3>
 									<ul>
-										<li><b>Roles:</b> Lead Designer/Project Manager </li>
+										<li><b>Roles:</b> Game Designer/Project Manager </li>
 										<li><b>Team size:</b> 10 people</li>
 										<li><b>Duration:</b> June 2024 - October 2024</li>
 									</ul>
 									<h3 class="major">Ideation and Prototype Process</h3>
 									<h4>Ideation</h4>
-									<p><span class="image right"><img src="images/Ideation_FinalConcept.png" alt="" /></span>For the ideation phase, I analysed survival games to outline the aesthetics that the genre must evoke in the player coming up with a list of possible aesthetics and dynamics. Some examples are:</p>
+									<p><span class="image right"><img src="images/Ideation_FinalConcept.png" alt="" /></span>I analysed survival games to outline the aesthetics that the genre must evoke in the player coming up with a list of possible aesthetics and dynamics. Some examples are:</p>
 									<ul>
 										<li>Sense of urgency</li>
 										<li>Scarcity</li>
@@ -119,12 +127,10 @@
 									</div>
 									<p>Following some of the suggestions made in the feedback document and other solutions found after further analysis and research, <b>I modified the concept</b>, creating a more solid concept that would <b>solve the problems</b> found in the prototype.</p>
 
-									<p>As lead designer and project manager I had the complete framework for project refactoring and development and <b>assigned priorities and tasks</b> to team members.</p>
-
-									<p>During the development period, I supervised every part of the development, helping and/or taking charge of tasks including:
+									<p>During the development period, my tasks included:
 										<ul>
-											<li>Map layout, overall progression and pacing of the game;</li>
-											<li>Level design of the initial areas of the game;</li>
+											<li>Design map layout, overall progression and pacing of the game;</li>
+											<li>Level design of game's areas including ;</li>
 											<li>Heavy testing of each part of the game to keep polishing the core design;</li>
 											<li>Filling the game design document;</li>
 											<li>UI and Menus design</li>
@@ -132,41 +138,61 @@
 										</ul> 
 									</p>
 
-									<p>Following I will explain some of the processes behind the Map layout and testing. <b>Please watch the gameplay trailer at the top of the page to have more insights on the project</b>.</p>
-
 									<h3 class="major">Map Layout and Progression of the game</h3>
-									<p>The new concept changed the use of objects by tying progression to the finding of objects that allow the player to progress metroidvania-style. </p>
-									<p><span class="image right"><img src="images/TSP_ProtoMap.png" alt="" /></span>Progression was meant to:
+									<p>Progression was tied to the finding objects that allow the player to progress through areas in metroidvania-style. </p>
+									<p><span class="image right"><img src="images/TSP_ProtoMap.png" alt="" /></span> Progression was meant to:
 										<ul>
 											<li>Direct players without putting them on tracks;</li>
-											<li>Leave breadcrumbs to the players to determine the correct path on their own;</li>
+											<li>Leave breadcrumbs for players to determine the critical path on their own;</li>
 											<li>Limiting exploration through the use of skills and objects;</li>
-											<li>Reduce to a minimum the backtracking.</li>
+											<li>Reduce the backtracking to a minimum.</li>
 										</ul>
 									</p>
+									<h4>Challenge 1</h4>
+									<p>We wanted to create a world that could give the illusion of open world but heavily direct players to avoid the extreme challenges that an open world could create.</p>
+									<p>And subsequently increase the challenge that each area put on the player.</p>
 
-									<p>To achieve this effects we divided the whole map in <b>areas</b> where the player was free to <b>explore, find resources to survive, narrative elements and key items</b> to progress outside those areas.</p>
-									<p><span class="image left"><img src="images/TSP_Map.png" alt="" /></span> We designed those areas with <b>landmarks</b> and peculiar elements to make them unique from one another, and placed key items in each area to determine progression.</p>
-									<p>We then assigned a red number to each area to identify the <b>creature level of aggression</b> (higher number higher aggression)</p>
-									<p>With all those elements placed I proceeded to implement them in Unreal using landscapes, landscape materials, and various asset packs.</p>
-									<p>Following the final map layout that the player can found in the game with sites of interest and memorable landmarks. </p>
+									<h4>Solution</h4>
+									<ul>
+										<li>We divided the whole map in <b>areas</b> where the player was free to <b>explore, find resources to survive, find narrative elements and key items</b> to progress outside those areas.</li>
+										<li>We designed those areas with <b>landmarks</b> and peculiar elements to make them unique from one another, and placed key items in each area to determine progression.</li>
+										<li>Created an extreme environment in darkness to push player towards a more conservative and safe playstyle.</li>
+										<li>Assigned a red number to each area to identify the <b>creature level of aggression</b> (higher number higher aggression) increasing difficulty as the number goes up.</li>
+										<li>Introduced the compass as one of the first items in the game.</li>
+									</ul>
 									<br>
-									<div class="row gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/TSP_MapFinal.jpg" alt="" /></span></div>
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/TSP_Map.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/TSP_MapFinal.jpg" alt="" /></span></div>
+										</div>
 									</div>
-									<br>
+									
+									<h4>Challenge 2</h4>
+									<p>In total darkness players still felt lost even with the flashlight due to the open nature of the environment.</p>
+
+									<h4>Solution</h4>
+									<ul>
+										<li>Used our dialogue system as points of relief during area exploration and tell the players they were going in the right direction.</li>
+										<li>Placed strategic lighting to direct players towards points of interests an orient themselves.</li>
+									</ul>
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/TSP_Dialogues.png" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/TSP_Lights.png" alt="" /></span></div>
+										</div>
+									</div>
 
 									<h3 class="major">Testing</h3>
 									<p><span class="image right"><img src="images/Woods_Compass_Small.png" alt="" /></span>After the development of a satisfying version of the game that could return good feedback from players, 
 										I organised a new <b>test round</b> including players who had played the prototype version (now far removed from the current version) and players new to the game.</p>
 									<p>By collecting feedback and analysing the players as they played, I produced a new <b>feedback document</b> to illustrate the project achievements and failures. Read the document  <a href="files/ProjectWinter - Feedback Analysis 2.pdf.pdf"><b>HERE</b></a>.</p>
-									<p>The analysis and document produced allowed me to draw up a backlog of tasks that allowed our team to give the game a final stir before release, fixing some weak points and creating a more solid product.</p>
-
-									<h3 class="major">Conclusions</h3>
-									<p>
-										In conclusion, all I have reported here is a small part of my contribution to the project. 
-										The game is not where we hoped it would be, but it is still a finished and complete product. I am proud of myself and my team for having achieved this victory given the countless obstacles we faced.
-									</p>
+									<br>
+									<br>
+									<br>
+									<br>
 
 									<p>If you would like to know more about the development of The Shattered Peak and my approach to design, please contact me using the contact details at the bottom of the page. Thanks for reading!</p>
 
