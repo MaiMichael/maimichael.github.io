@@ -1,156 +1,619 @@
-<!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Michael's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Game Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #18181B;
+    --bg-raised: #1E1E22;
+    --bg-card: #232328;
+    --bg-card-hover: #2A2A30;
+    --text: #E8E6E3;
+    --text-mid: #9B9A97;
+    --text-dim: #5C5B59;
+    --accent: #C9A227;
+    --accent-glow: rgba(201, 162, 39, 0.15);
+    --accent-hover: #DABB44;
+    --border: #33333A;
+    --border-hover: #44444D;
+    --tag-bg: rgba(255,255,255,0.05);
+    --tag-border: rgba(255,255,255,0.08);
+    --shadow: 0 2px 8px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.2);
+    --shadow-hover: 0 4px 16px rgba(0,0,0,0.4), 0 12px 40px rgba(0,0,0,0.3);
+    --radius: 10px;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'Space Mono', monospace;
+  }
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Michael's Portfolio</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="documentation.html">Documentation</a></li>
-								<li><a href="about.html">Get to know me</a></li>
-								<li><a href="files/MichaelOrsini_Resume.pdf" download="MichaelOrsini_Resume">Download Resume</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(24,24,27,0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    max-width: 1160px; margin: 0 auto;
+    padding: 0 32px; height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-name {
+    font-family: var(--font-mono);
+    font-size: 0.9rem; font-weight: 700;
+    color: var(--text); text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a {
+    font-size: 0.8rem; font-weight: 500; color: var(--text-mid);
+    text-decoration: none; letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links a.nav-cta { color: var(--accent); font-weight: 600; }
+  .nav-links a.nav-cta:hover { color: var(--accent-hover); }
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<!--<div class="logo"><span class="icon fa-gem"></span></div>-->
-							<h2>Michael Orsini</h2>
-							<p>Game Designer - Portfolio</p>
-								<section class="features">
-									<article>
-										<a href="Hungerless.html" class="image"><img src="images/Hungerless_Logo.png" alt="" /></a>
-										<h3 class="major">Hungerless</h3>
-										<p><b>Genre:</b> Horror, Narrative, Puzzle  </br>
-										<b>Platform:</b> PC </br>
-										<b>Engine:</b> Unreal Engine 5</br>
-										<b>Team Size:</b> 11 people </br>
-										<b>Team: </b><a href="https://www.bastetpaw.com/index.html">Bastet Paw</a></br>
-										<b>Duration:</b> Sep 2025 - ongoing </br>
-										<b>Roles:</b> Narrative Designer </p>
-										<a href="Hungerless.html" class="special">Learn more</a>
-									</article>
-									<article>
-										<a href="TheShatteredPeak.html" class="image"><img src="images/CoverImage.png" alt="" /></a>
-										<h3 class="major">The Shattered Peak</h3>
-										<p><b>Genre:</b> Survival, Horror, Narrative </br>
-										<b>Platform:</b> PC </br>
-										<b>Engine:</b> Unreal Engine 5 </br>
-										<b>Team Size:</b> 10 people </br>
-										<b>Duration:</b> June 2024 - October 2024 </br></p>
-										<a href="TheShatteredPeak.html" class="special">Learn more</a>
-									</article>
-								</section>
-								<ul class="actions">
-									<li><a href="projects.html" class="button">Browse All Projects</a></li>
-								</ul>
-						</div>
-					</section>
+  /* ── BANNER ── */
+  .banner {
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+    /* To use your own image instead of the generated texture:
+       1. Remove the .banner-texture div below
+       2. Add: background: url('your-dark-image.jpg') center/cover no-repeat; */
+  }
+  .banner-texture {
+    position: absolute; inset: 0;
+    /* Noise grain texture */
+    background:
+      repeating-conic-gradient(
+        rgba(201,162,39,0.03) 0% 25%, transparent 0% 50%
+      ) 0 0 / 4px 4px;
+  }
+  .banner-texture::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 40%, rgba(201,162,39,0.07) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 60%, rgba(160,120,20,0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 0%, rgba(201,162,39,0.03) 0%, transparent 60%);
+  }
+  .banner-texture::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(24,24,27,0) 50%,
+      rgba(24,24,27,0.6) 80%,
+      var(--bg) 100%
+    );
+  }
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<section id="one" class="wrapper alt style1">
-							<div class="inner">
-								<div class="content">
-									<h2 class="major">Documentation</h2>
-									<p>I give great importance to documentation skills. Learn more about them reading some of my GDDs, Pitches, Analysis and Researches.</p>
-									<ul class="actions">
-										<li><a href="documentation.html" class="button">Browse Documentation</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-					<section id="wrapper">
-						<section id="two" class="wrapper spotlight style6">
-							<div class="inner">
-								<a href="about.html" class="image"><img src="images/happyme.jpg" alt="" /></a>
-								<div class="content">
-									<h2 class="major">About</h2>
-									<p>Hello! I'm a game designer! My goal is to create immersive worlds, memorable experiences and engaging systems combining my practicality, attention to detail and systematic approach with high attention to players feelings and emotions.</p>
-									<a href="about.html" class="special">Get to Know Me</a>
-									<a href="files/MichaelOrsini_CV.pdf" download="MichaelOrsini_CV" class="special">Download Resume</a>
-								</div>
-							</div>
-						</section>
-					</section>
+  .banner-inner {
+    position: relative; z-index: 2;
+    max-width: 1160px; margin: 0 auto;
+    padding: 48px 32px 40px;
+  }
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Thank you for going through my content. Feel free to use the contacts below to get in touch with me and design some games together. </p>
-							<!--form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form-->
-							<ul class="contact">
-								<li class="icon solid fa-home">Nettuno, Rome, Italy</li>
-								<li class="icon solid fa-envelope"><a href="michaelodesign24@gmail.com" target="_blank" rel="noopener noreferrer">michaelodesign24@gmail.com</a></li>
-								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/michael-orsini-38bb18179/" target="_blank" rel="noopener noreferrer">Linkedin.com</a></li>
-								<li class="icon brands fa-itch-io"><a href="https://maimichaeldev.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a></li>
-								<li class="icon brands fa-youtube"><a href="https://www.youtube.com/@MichaelOrsini-wj8hm" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-								<li class="icon brands fa-dev"><a href="files/MichaelOrsini_Resume.pdf" download="MichaelOrsini_Resume">Download Resume</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; 2024 Michael Orsini. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+  .intro {
+    display: flex; align-items: baseline; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px;
+    opacity: 0; animation: fadeIn 0.5s 0.1s forwards;
+  }
+  .intro-left h1 {
+    font-size: 1.4rem; font-weight: 700;
+    letter-spacing: -0.02em; margin-bottom: 4px;
+  }
+  .intro-left p {
+    font-size: 0.88rem; color: var(--text-mid);
+    max-width: 520px; line-height: 1.6;
+  }
+  .intro-roles {
+    display: flex; gap: 8px; flex-wrap: wrap;
+  }
+  .role-pill {
+    font-family: var(--font-mono);
+    font-size: 0.68rem; letter-spacing: 0.04em;
+    padding: 5px 12px; border-radius: 6px;
+    background: var(--tag-bg); border: 1px solid var(--tag-border);
+    color: var(--text-mid);
+  }
 
-			</div>
+  /* ── PROJECT GRID ── */
+  .projects-section {
+    max-width: 1160px; margin: 0 auto;
+    padding: 8px 32px 80px;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+    opacity: 0; animation: fadeIn 0.5s 0.25s forwards;
+  }
+  .project-card {
+    background: var(--bg-card);
+    border: 1.5px solid var(--border-hover);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+    text-decoration: none; color: inherit;
+    display: block;
+  }
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover), 0 0 24px var(--accent-glow);
+    border-color: rgba(201, 162, 39, 0.35);
+  }
+  .project-card:hover .card-thumb {
+    border-bottom-color: var(--border-hover);
+  }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  .card-thumb {
+    width: 100%; aspect-ratio: 16/9;
+    background: var(--bg-raised);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+    transition: border-color 0.25s;
+  }
+  .card-thumb .placeholder-icon {
+    font-size: 2rem; opacity: 0.25;
+  }
+  .card-thumb .thumb-hint {
+    position: absolute; bottom: 10px; right: 14px;
+    font-size: 0.65rem; color: var(--text-dim);
+    font-family: var(--font-mono);
+    letter-spacing: 0.03em;
+  }
 
-	</body>
+  .card-body { padding: 18px 20px 20px; }
+  .card-top-row {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .card-role {
+    font-family: var(--font-mono);
+    font-size: 0.68rem; font-weight: 700;
+    color: var(--accent); text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .card-arrow {
+    font-size: 0.85rem; color: var(--text-dim);
+    transition: color 0.2s, transform 0.2s;
+  }
+  .project-card:hover .card-arrow {
+    color: var(--accent); transform: translateX(3px);
+  }
+  .card-body h3 {
+    font-size: 1.05rem; font-weight: 600;
+    letter-spacing: -0.01em; margin-bottom: 6px;
+  }
+  .card-body p {
+    font-size: 0.82rem; color: var(--text-mid); line-height: 1.55;
+    margin-bottom: 14px;
+  }
+  .card-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+  .meta-tag {
+    padding: 3px 9px; border-radius: 5px;
+    background: var(--tag-bg); border: 1px solid var(--tag-border);
+    font-size: 0.68rem; color: var(--text-dim);
+    font-weight: 500; letter-spacing: 0.02em;
+  }
+
+  /* ── SECTION SHARED ── */
+  section {
+    max-width: 1160px; margin: 0 auto; padding: 0 32px;
+  }
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.85rem; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── EXPERIENCE ── */
+  #experience { padding-top: 20px; padding-bottom: 80px; }
+  .exp-list { display: flex; flex-direction: column; gap: 0; }
+  .exp-item {
+    display: grid; grid-template-columns: 180px 1fr;
+    gap: 32px; padding: 22px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .exp-item:last-child { border-bottom: none; }
+  .exp-dates {
+    font-family: var(--font-mono);
+    font-size: 0.72rem; color: var(--text-dim);
+    padding-top: 3px; letter-spacing: 0.02em;
+  }
+  .exp-content h3 { font-size: 1rem; font-weight: 600; margin-bottom: 2px; }
+  .exp-content .exp-studio {
+    font-size: 0.82rem; color: var(--accent); font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .exp-content p {
+    font-size: 0.82rem; color: var(--text-mid); line-height: 1.6;
+    max-width: 540px;
+  }
+
+  /* ── ABOUT ── */
+  #about { padding-top: 20px; padding-bottom: 80px; }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 40px; align-items: start;
+  }
+  .about-photo {
+    width: 100%; aspect-ratio: 1;
+    border-radius: var(--radius);
+    background: var(--bg-card); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.4rem; color: var(--text-dim);
+  }
+  .about-text h3 {
+    font-size: 1.2rem; font-weight: 600;
+    margin-bottom: 14px; letter-spacing: -0.01em;
+  }
+  .about-text p {
+    font-size: 0.88rem; color: var(--text-mid);
+    line-height: 1.75; margin-bottom: 12px;
+    max-width: 560px;
+  }
+  .about-text .hl { color: var(--text); font-weight: 500; }
+
+  /* ── CONTACT ── */
+  #contact { padding-top: 20px; padding-bottom: 100px; }
+  .contact-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 44px; text-align: center;
+  }
+  .contact-box h3 {
+    font-size: 1.3rem; font-weight: 600; margin-bottom: 10px;
+  }
+  .contact-box p {
+    font-size: 0.88rem; color: var(--text-mid);
+    margin-bottom: 26px; max-width: 420px;
+    margin-left: auto; margin-right: auto; line-height: 1.7;
+  }
+  .contact-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .contact-link {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 10px 22px; border-radius: 8px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none; transition: all 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .contact-link.primary { background: var(--accent); color: #fff; }
+  .contact-link.primary:hover { background: var(--accent-hover); box-shadow: 0 0 20px var(--accent-glow); }
+  .contact-link.secondary {
+    background: var(--tag-bg); color: var(--text-mid);
+    border: 1px solid var(--tag-border);
+  }
+  .contact-link.secondary:hover { background: rgba(255,255,255,0.08); color: var(--text); }
+
+  /* ── FOOTER ── */
+  footer {
+    max-width: 1160px; margin: 0 auto;
+    padding: 20px 32px 36px;
+    border-top: 1px solid var(--border);
+    display: flex; justify-content: space-between;
+    align-items: center; flex-wrap: wrap; gap: 12px;
+  }
+  footer span {
+    font-size: 0.72rem; color: var(--text-dim);
+    font-family: var(--font-mono);
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .reveal {
+    opacity: 0; transform: translateY(16px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+  }
+  .reveal.vis { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .nav-inner { padding: 0 20px; }
+    .nav-links { gap: 18px; }
+    .banner-inner { padding: 36px 20px 32px; }
+    .projects-section { padding: 8px 20px 60px; }
+    section { padding-left: 20px; padding-right: 20px; }
+    .project-grid { grid-template-columns: 1fr; }
+    .about-grid { grid-template-columns: 1fr; gap: 24px; }
+    .about-photo { max-width: 180px; }
+    .exp-item { grid-template-columns: 1fr; gap: 6px; }
+    .contact-box { padding: 28px 20px; }
+    footer { padding: 16px 20px 28px; }
+  }
+  @media (max-width: 480px) {
+    .intro-left h1 { font-size: 1.2rem; }
+    .nav-links { gap: 12px; }
+    .project-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-name">YOUR NAME</a>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ════ BANNER ════ -->
+<div class="banner">
+  <!-- Remove this div and use a background-image on .banner for your own image -->
+  <div class="banner-texture"></div>
+  <div class="banner-inner">
+    <div class="intro">
+      <div class="intro-left">
+        <h1>Your Name</h1>
+        <p>Game designer, narrative designer, and producer building dark, atmospheric experiences that stay with players.</p>
+      </div>
+      <div class="intro-roles">
+        <span class="role-pill">Game Design</span>
+        <span class="role-pill">Narrative</span>
+        <span class="role-pill">Production</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ PROJECTS ════ -->
+<div class="projects-section" id="projects">
+  <div class="project-grid">
+
+    <a href="project-detail.html" class="project-card">
+      <div class="card-thumb">
+        <span class="placeholder-icon">🩸</span>
+        <span class="thumb-hint">screenshot</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top-row">
+          <span class="card-role">Lead Designer</span>
+          <span class="card-arrow">→</span>
+        </div>
+        <h3>Hollow Descent</h3>
+        <p>A psychological horror game where the environment warps in response to player decisions. Led design and production for a team of 10.</p>
+        <div class="card-meta">
+          <span class="meta-tag">Unreal Engine 5</span>
+          <span class="meta-tag">Horror</span>
+          <span class="meta-tag">Team of 10</span>
+          <span class="meta-tag">14 months</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="card-thumb">
+        <span class="placeholder-icon">🕯️</span>
+        <span class="thumb-hint">screenshot</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top-row">
+          <span class="card-role">Narrative Designer</span>
+          <span class="card-arrow">→</span>
+        </div>
+        <h3>The Vigil</h3>
+        <p>A first-person narrative horror set in a crumbling monastery. Wrote 45K+ words of branching dialogue and environmental storytelling.</p>
+        <div class="card-meta">
+          <span class="meta-tag">Unity</span>
+          <span class="meta-tag">Narrative Horror</span>
+          <span class="meta-tag">Team of 6</span>
+          <span class="meta-tag">10 months</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="card-thumb">
+        <span class="placeholder-icon">🪦</span>
+        <span class="thumb-hint">screenshot</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top-row">
+          <span class="card-role">Game Designer & Producer</span>
+          <span class="card-arrow">→</span>
+        </div>
+        <h3>Undergrave</h3>
+        <p>A co-op survival horror with asymmetric roles. Designed the core tension loop and managed cross-discipline sprints.</p>
+        <div class="card-meta">
+          <span class="meta-tag">Unreal Engine 5</span>
+          <span class="meta-tag">Survival Horror</span>
+          <span class="meta-tag">Team of 8</span>
+          <span class="meta-tag">12 months</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="card-thumb">
+        <span class="placeholder-icon">👁️</span>
+        <span class="thumb-hint">screenshot</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top-row">
+          <span class="card-role">Systems Designer</span>
+          <span class="card-arrow">→</span>
+        </div>
+        <h3>Witness Protocol</h3>
+        <p>A found-footage horror game with procedural scare systems. Designed AI behavior trees and escalating dread mechanics.</p>
+        <div class="card-meta">
+          <span class="meta-tag">Unity</span>
+          <span class="meta-tag">Horror</span>
+          <span class="meta-tag">Team of 4</span>
+          <span class="meta-tag">8 months</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="card-thumb">
+        <span class="placeholder-icon">🌑</span>
+        <span class="thumb-hint">screenshot</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top-row">
+          <span class="card-role">Creative Lead</span>
+          <span class="card-arrow">→</span>
+        </div>
+        <h3>Peel</h3>
+        <p>A short-form body horror experience about identity and transformation. Directed all creative vision from pitch to release.</p>
+        <div class="card-meta">
+          <span class="meta-tag">Godot</span>
+          <span class="meta-tag">Body Horror</span>
+          <span class="meta-tag">Solo Project</span>
+          <span class="meta-tag">4 months</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="card-thumb">
+        <span class="placeholder-icon">🔑</span>
+        <span class="thumb-hint">screenshot</span>
+      </div>
+      <div class="card-body">
+        <div class="card-top-row">
+          <span class="card-role">Game Designer</span>
+          <span class="card-arrow">→</span>
+        </div>
+        <h3>Lockwood House</h3>
+        <p>A classic puzzle-box horror inspired by PS1-era design. Created 30+ interconnected puzzles with escalating complexity.</p>
+        <div class="card-meta">
+          <span class="meta-tag">Unreal Engine 5</span>
+          <span class="meta-tag">Puzzle Horror</span>
+          <span class="meta-tag">Team of 5</span>
+          <span class="meta-tag">9 months</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label reveal">Experience</div>
+  <div class="exp-list">
+    <div class="exp-item reveal">
+      <div class="exp-dates">2023 — Present</div>
+      <div class="exp-content">
+        <h3>Lead Game Designer</h3>
+        <div class="exp-studio">Studio Name</div>
+        <p>Led design for an unannounced horror title from concept through production. Owned core loop, progression, and narrative integration across a team of 10+.</p>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-dates">2021 — 2023</div>
+      <div class="exp-content">
+        <h3>Game Designer / Producer</h3>
+        <div class="exp-studio">Studio Name</div>
+        <p>Shipped two titles. Ran sprint planning, authored design documentation, and coordinated between design, art, and engineering.</p>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-dates">2019 — 2021</div>
+      <div class="exp-content">
+        <h3>Junior Designer</h3>
+        <div class="exp-studio">Studio Name</div>
+        <p>Designed and iterated on levels and encounters. Led playtesting sessions and compiled actionable feedback reports.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label reveal">About</div>
+  <div class="about-grid reveal">
+    <div class="about-photo">📷</div>
+    <div class="about-text">
+      <h3>The short version</h3>
+      <p>
+        I'm a <span class="hl">game designer, narrative designer, and producer</span> who thrives at the intersection of creative vision and structured execution. Horror is my home — I'm drawn to experiences that unsettle, provoke, and linger.
+      </p>
+      <p>
+        What sets me apart is range. I've gone from whiteboarding core loops to writing branching scripts to running daily standups — sometimes in the same week. I believe the best horror comes from teams that <span class="hl">communicate well and iterate fearlessly</span>.
+      </p>
+      <p>
+        When I'm not designing, you'll find me [your hobby], [your hobby], or dissecting why [a horror game you love] works so well.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label reveal">Contact</div>
+  <div class="contact-box reveal">
+    <h3>Let's build something unsettling.</h3>
+    <p>Open to full-time roles and contract work in game design, narrative design, and production. Always happy to talk shop.</p>
+    <div class="contact-links">
+      <a href="mailto:you@email.com" class="contact-link primary">✉ Email Me</a>
+      <a href="#" class="contact-link secondary">LinkedIn</a>
+      <a href="#" class="contact-link secondary">Resume (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Your Name</span>
+  <span>Game Designer · Narrative Designer · Producer</span>
+</footer>
+
+<script>
+  // Scroll reveal
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('vis'), i * 50);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+</body>
 </html>
