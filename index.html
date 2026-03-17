@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Game Designer</title>
+<title>Michael Orsini — Game/Narrative Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -218,6 +218,30 @@
     font-weight: 500; letter-spacing: 0.02em;
   }
 
+    /* ── MORE PROJECTS ── */
+  .more-projects {
+    text-align: center;
+    padding-top: 32px;
+  }
+  .more-projects-btn {
+    display: inline-flex; align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.8rem; font-weight: 700;
+    color: var(--text-mid);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    transition: all 0.2s;
+  }
+  .more-projects-btn:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(201, 162, 39, 0.06);
+  }
+
   /* ── SECTION SHARED ── */
   section {
     max-width: 1160px; margin: 0 auto; padding: 0 32px;
@@ -362,7 +386,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-name">YOUR NAME</a>
+    <a href="#" class="nav-name">MICHAEL ORSINI</a>
     <div class="nav-links">
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
@@ -379,13 +403,13 @@
   <div class="banner-inner">
     <div class="intro">
       <div class="intro-left">
-        <h1>Your Name</h1>
-        <p>Game designer, narrative designer, and producer building dark, atmospheric experiences that stay with players.</p>
+        <h1>Michael Orsini</h1>
+        <p>Game designer and narrative designer building atmospheric, memorable experiences that stay with players.</p>
       </div>
       <div class="intro-roles">
         <span class="role-pill">Game Design</span>
         <span class="role-pill">Narrative</span>
-        <span class="role-pill">Production</span>
+		<span class="role-pill">Production</span>
       </div>
     </div>
   </div>
@@ -395,122 +419,120 @@
 <div class="projects-section" id="projects">
   <div class="project-grid">
 
-    <a href="project-detail.html" class="project-card">
+    <a href="hungerless-detail.html" class="project-card">
       <div class="card-thumb">
+        <img src="images/Hungerless_Logo.png" alt="Hungerless Logo" style="width: 100%; height: 100%; object-fit: cover;">
+        <!--
         <span class="placeholder-icon">🩸</span>
         <span class="thumb-hint">screenshot</span>
-      </div>
-      <div class="card-body">
-        <div class="card-top-row">
-          <span class="card-role">Lead Designer</span>
-          <span class="card-arrow">→</span>
-        </div>
-        <h3>Hollow Descent</h3>
-        <p>A psychological horror game where the environment warps in response to player decisions. Led design and production for a team of 10.</p>
-        <div class="card-meta">
-          <span class="meta-tag">Unreal Engine 5</span>
-          <span class="meta-tag">Horror</span>
-          <span class="meta-tag">Team of 10</span>
-          <span class="meta-tag">14 months</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="#" class="project-card">
-      <div class="card-thumb">
-        <span class="placeholder-icon">🕯️</span>
-        <span class="thumb-hint">screenshot</span>
+      -->
       </div>
       <div class="card-body">
         <div class="card-top-row">
           <span class="card-role">Narrative Designer</span>
           <span class="card-arrow">→</span>
         </div>
-        <h3>The Vigil</h3>
-        <p>A first-person narrative horror set in a crumbling monastery. Wrote 45K+ words of branching dialogue and environmental storytelling.</p>
-        <div class="card-meta">
-          <span class="meta-tag">Unity</span>
-          <span class="meta-tag">Narrative Horror</span>
-          <span class="meta-tag">Team of 6</span>
-          <span class="meta-tag">10 months</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="#" class="project-card">
-      <div class="card-thumb">
-        <span class="placeholder-icon">🪦</span>
-        <span class="thumb-hint">screenshot</span>
-      </div>
-      <div class="card-body">
-        <div class="card-top-row">
-          <span class="card-role">Game Designer & Producer</span>
-          <span class="card-arrow">→</span>
-        </div>
-        <h3>Undergrave</h3>
-        <p>A co-op survival horror with asymmetric roles. Designed the core tension loop and managed cross-discipline sprints.</p>
+        <h3>Hungerless</h3>
+        <p>A psychological horror game about eating disorders.</p>
         <div class="card-meta">
           <span class="meta-tag">Unreal Engine 5</span>
-          <span class="meta-tag">Survival Horror</span>
-          <span class="meta-tag">Team of 8</span>
-          <span class="meta-tag">12 months</span>
+          <span class="meta-tag">Psychological Horror</span>
+          <span class="meta-tag">Team of 14</span>
+          <span class="meta-tag">Ongoing</span>
         </div>
       </div>
     </a>
 
-    <a href="#" class="project-card">
+    <a href="theshatteredpeak-detail.html" class="project-card">
       <div class="card-thumb">
-        <span class="placeholder-icon">👁️</span>
-        <span class="thumb-hint">screenshot</span>
+        <img src="images/TSP_CoverImage.png" alt="The Shattered Peak Logo" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
       <div class="card-body">
         <div class="card-top-row">
-          <span class="card-role">Systems Designer</span>
+          <span class="card-role">Lead Designer & Project Manager</span>
           <span class="card-arrow">→</span>
         </div>
-        <h3>Witness Protocol</h3>
-        <p>A found-footage horror game with procedural scare systems. Designed AI behavior trees and escalating dread mechanics.</p>
+        <h3>The Shattered Peak</h3>
+        <p>A first-person survival narrative horror set in a snowy island.</p>
         <div class="card-meta">
-          <span class="meta-tag">Unity</span>
-          <span class="meta-tag">Horror</span>
-          <span class="meta-tag">Team of 4</span>
-          <span class="meta-tag">8 months</span>
+          <span class="meta-tag">Unreal Engine 5</span>
+          <span class="meta-tag">Narrative Survival Horror</span>
+          <span class="meta-tag">Team of 10</span>
+          <span class="meta-tag">6 Months</span>
         </div>
       </div>
     </a>
 
     <a href="#" class="project-card">
       <div class="card-thumb">
-        <span class="placeholder-icon">🌑</span>
-        <span class="thumb-hint">screenshot</span>
+        <img src="images/Lucidity_Screenshot2.png" alt="Lucidity Logo" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
       <div class="card-body">
         <div class="card-top-row">
-          <span class="card-role">Creative Lead</span>
+          <span class="card-role">Solo Dev</span>
           <span class="card-arrow">→</span>
         </div>
-        <h3>Peel</h3>
-        <p>A short-form body horror experience about identity and transformation. Directed all creative vision from pitch to release.</p>
+        <h3>Lucidity</h3>
+        <p>A short experience about dreams and disconnection from reality. Completely developed in solo from code to art.</p>
         <div class="card-meta">
           <span class="meta-tag">Godot</span>
-          <span class="meta-tag">Body Horror</span>
+          <span class="meta-tag">Mistery Narrative</span>
           <span class="meta-tag">Solo Project</span>
-          <span class="meta-tag">4 months</span>
+          <span class="meta-tag">1 Week</span>
         </div>
       </div>
     </a>
 
     <a href="#" class="project-card">
       <div class="card-thumb">
-        <span class="placeholder-icon">🔑</span>
-        <span class="thumb-hint">screenshot</span>
+        <img src="images/Babel Bubble Cover.png" alt="Babel Bubble Logo" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="card-body">
+        <div class="card-top-row">
+          <span class="card-role">Game Designer & Project Manager</span>
+          <span class="card-arrow">→</span>
+        </div>
+        <h3>Babel Bubble</h3>
+        <p>A 2.5D crazy challenging platformer based on comics.</p>
+        <div class="card-meta">
+          <span class="meta-tag">Unreal Engine 5</span>
+          <span class="meta-tag">2.5D Platformer</span>
+          <span class="meta-tag">Team of 8</span>
+          <span class="meta-tag">1 Week</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="card-thumb">
+        <img src="images/FurCityCover.png" alt="FurCity Survival Logo" style="width: 100%; height: 100%; object-fit: cover;">
       </div>
       <div class="card-body">
         <div class="card-top-row">
           <span class="card-role">Game Designer</span>
           <span class="card-arrow">→</span>
         </div>
-        <h3>Lockwood House</h3>
+        <h3>FurCity Survival</h3>
+        <p>A casual resource management game set in a cyberpunk future controlled by animal gangs.</p>
+        <div class="card-meta">
+          <span class="meta-tag">Unity</span>
+          <span class="meta-tag">Casual Management</span>
+          <span class="meta-tag">Team of 6</span>
+          <span class="meta-tag">3 months</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#" class="project-card">
+      <div class="card-thumb">
+        <img src="images/N&BCoverImage.png" alt="Nuts&Bolty screenshot" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="card-body">
+        <div class="card-top-row">
+          <span class="card-role">Solo Dev</span>
+          <span class="card-arrow">→</span>
+        </div>
+        <h3>Nuts & Bolty</h3>
         <p>A classic puzzle-box horror inspired by PS1-era design. Created 30+ interconnected puzzles with escalating complexity.</p>
         <div class="card-meta">
           <span class="meta-tag">Unreal Engine 5</span>
@@ -522,6 +544,11 @@
     </a>
 
   </div>
+  <div class="more-projects">
+    <a href="https://maimichaeldev.itch.io/" target="_blank" class="more-projects-btn">
+      Browse more projects on itch.io →
+    </a>
+  </div>
 </div>
 
 <!-- EXPERIENCE -->
@@ -529,27 +556,35 @@
   <div class="section-label reveal">Experience</div>
   <div class="exp-list">
     <div class="exp-item reveal">
-      <div class="exp-dates">2023 — Present</div>
+      <div class="exp-dates">2025 — Present</div>
       <div class="exp-content">
-        <h3>Lead Game Designer</h3>
-        <div class="exp-studio">Studio Name</div>
-        <p>Led design for an unannounced horror title from concept through production. Owned core loop, progression, and narrative integration across a team of 10+.</p>
+        <h3>Narrative Designer</h3>
+        <div class="exp-studio">Bastet Paw</div>
+        <p>Narrative designer for Hungerless, a psychological horror game about eating disorders in UE5. Owned progression, and narrative integration across a team of 14+.</p>
       </div>
     </div>
     <div class="exp-item reveal">
-      <div class="exp-dates">2021 — 2023</div>
+      <div class="exp-dates">Jan 2025</div>
       <div class="exp-content">
-        <h3>Game Designer / Producer</h3>
-        <div class="exp-studio">Studio Name</div>
-        <p>Shipped two titles. Ran sprint planning, authored design documentation, and coordinated between design, art, and engineering.</p>
+        <h3>Game Designer</h3>
+        <div class="exp-studio">Global Game Jam 2025</div>
+        <p>Designer for Babel Bubble a 2.5D platform game made in UE5 leading a team of 8 people.</p>
       </div>
     </div>
     <div class="exp-item reveal">
-      <div class="exp-dates">2019 — 2021</div>
+      <div class="exp-dates">May 2024 - Oct 2024</div>
       <div class="exp-content">
-        <h3>Junior Designer</h3>
-        <div class="exp-studio">Studio Name</div>
-        <p>Designed and iterated on levels and encounters. Led playtesting sessions and compiled actionable feedback reports.</p>
+        <h3>Game Designer/Project Manager</h3>
+        <div class="exp-studio">Monkey Chop Studio</div>
+        <p>Designed and implemented complete gameplay areas for The Shattered peak, a survival narrative horror game in UE5. Shaped progression, encounter design, and storytelling leading a 10-person multidisciplinary team throught every development phase.</p>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-dates">March 2024 - May 2024</div>
+      <div class="exp-content">
+        <h3>Game Designer</h3>
+        <div class="exp-studio">Team Project</div>
+        <p>Designer for FurCity Survival, a casual management game developed in Unity, settled in a cyberpunk future controlled by animal gangs.</p>
       </div>
     </div>
   </div>
@@ -559,17 +594,18 @@
 <section id="about">
   <div class="section-label reveal">About</div>
   <div class="about-grid reveal">
-    <div class="about-photo">📷</div>
+    <img src="images/happyme.jpg" alt="Hungerless Logo" style="width: 100%; height: 100%; object-fit: cover;">
     <div class="about-text">
       <h3>The short version</h3>
       <p>
-        I'm a <span class="hl">game designer, narrative designer, and producer</span> who thrives at the intersection of creative vision and structured execution. Horror is my home — I'm drawn to experiences that unsettle, provoke, and linger.
+        I'm a <span class="hl">game designer and narrative designer</span> who excels in creative vision and structured execution. My main goal is to design experiences that stay with the player, evoking their emotions, whether through a poignant moment, pure joy or terror.
       </p>
       <p>
-        What sets me apart is range. I've gone from whiteboarding core loops to writing branching scripts to running daily standups — sometimes in the same week. I believe the best horror comes from teams that <span class="hl">communicate well and iterate fearlessly</span>.
+        What sets me apart is my versatility and my desire to understand every aspect of game development. I can switch between designing systems and narrative sequences, providing support with scripting, managing backlogs and leading daily stand-ups. 
+        I firmly believe that the best designers are those who can understand (at least to some extent) the work of their colleagues and, as a result, <span class="hl">communicate effectively with them</span>.
       </p>
       <p>
-        When I'm not designing, you'll find me [your hobby], [your hobby], or dissecting why [a horror game you love] works so well.
+        When I’m not designing, you’ll find me playing my favourite brain-teasing games, drawing, building Gunpla, or dissecting why Baldur's Gate 3 works so well.
       </p>
     </div>
   </div>
@@ -579,12 +615,12 @@
 <section id="contact">
   <div class="section-label reveal">Contact</div>
   <div class="contact-box reveal">
-    <h3>Let's build something unsettling.</h3>
-    <p>Open to full-time roles and contract work in game design, narrative design, and production. Always happy to talk shop.</p>
+    <h3>Let's build something memorable.</h3>
+    <p>Open to full-time roles and contract work in game design and narrative design. Always happy to talk shop.</p>
     <div class="contact-links">
-      <a href="mailto:you@email.com" class="contact-link primary">✉ Email Me</a>
-      <a href="#" class="contact-link secondary">LinkedIn</a>
-      <a href="#" class="contact-link secondary">Resume (PDF)</a>
+      <a href="mailto:michaelodesign24@gmail.com" class="contact-link primary">✉ Email Me</a>
+      <a href="www.linkedin.com/in/michael-orsini-38bb18179" class="contact-link secondary">LinkedIn</a>
+      <a href="files/MichaelOrsini_Resume_26022026.pdf" class="contact-link secondary">Resume (PDF)</a>
     </div>
   </div>
 </section>
